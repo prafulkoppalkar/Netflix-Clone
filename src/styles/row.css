@@ -1,0 +1,39 @@
+.row h2 {
+  font-family: sans-serif;
+  padding-left: 0.5em;
+  color: #e5e5e5;
+  font-weight: 600;
+}
+.row_container {
+  padding-left: 1em;
+  display: flex;
+  overflow-y: hidden;
+  overflow-x: scroll;
+}
+
+.row_container::-webkit-scrollbar {
+  display: none;
+}
+
+.row_item {
+  cursor: pointer;
+  padding: 22px 7px 22px 7px;
+  max-height: 120px;
+  transition: transform 200ms;
+}
+
+.row_item:hover {
+  transform: scale(1.1);
+  transition: transform 200ms;
+}
+
+.large_row_item {
+  padding: 30px 12px 30px 12px;
+  cursor: pointer;
+  max-height: 300px;
+}
+
+.large_row_item:hover {
+  transform: scale(1.15);
+  transition: transform 200ms;
+}
